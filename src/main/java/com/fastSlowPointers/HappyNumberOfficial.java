@@ -1,21 +1,22 @@
 package com.fastSlowPointers;
 
-public class HappyNumber {
+public class HappyNumberOfficial {
 
   public static boolean find(int num) {
     int slow = num, fast = num;
     do {
-      slow = sumOfSquaresOfDigits(slow); // move one step
-      fast = sumOfSquaresOfDigits(sumOfSquaresOfDigits(fast)); // move two steps
+      slow = findSquareSum(slow);
+      fast = findSquareSum(fast);
     } while (slow != fast);
-    return slow == 1;
+    
+    return  slow == 1;
   }
   
-  private static int sumOfSquaresOfDigits(int num) {
-    int sum = 0;
+  private static int findSquareSum(int num) {
+    int sum = 0, digit;
     while (num > 0) {
-      int digit = num % 10;
-      sum += (digit * digit);
+      digit = num % 10;
+      sum += digit * digit;
       num /= 10;
     }
     return sum;
