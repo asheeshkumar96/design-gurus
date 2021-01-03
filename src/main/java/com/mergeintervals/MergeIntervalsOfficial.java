@@ -1,16 +1,18 @@
 package com.mergeintervals;
 
-import java.util.List;
+import com.mergeintervals.Interval2;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
-import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
-class Interval {
+
+class Interval2 {
 	int start;
 	int end;
 
-	public Interval(int start, int end) {
+	public Interval2(int start, int end) {
 		this.start = start; 
 		this.end = end;
 	}
@@ -18,17 +20,18 @@ class Interval {
 
 
 class MergeIntervalsOfficial  {
-
-	public static List<Interval> merge(List<Interval> intervals) {
+    
+    /*
+	public static List<Interval2> merge(List<Interval2> intervals) {
 		if (intervals.size() < 2) 
 			return intervals;
 
 		// sort the intervals by start time
 		Collections.sort(intervals, (a, b) -> Integer.compare(a.start, b.start));
 
-		List<Interval> mergedIntervals = new LinkedList<Interval>();
-		Iterator<Interval> intervalItr = intervals.iterator();
-		Interval interval = intervalItr.next();
+		List<Interval2> mergedIntervals = new LinkedList<Interval2>();
+		Iterator<Interval2> intervalItr = intervals.iterator();
+		Interval2 interval = intervalItr.next();
 		int start = interval.start;
 		int end = interval.end;
 
@@ -37,46 +40,47 @@ class MergeIntervalsOfficial  {
 			if(interval.start <= end) { // overlapping intervals, adjust the 'end'
 				end = Math.max(interval.end, end);
 			} else { // non-overlapping interval, add the previous interval and reset
-				mergedIntervals.add(new Interval(start, end));
+				mergedIntervals.add(new Interval2(start, end));
 				start = interval.start;
 				end = interval.end;
 			}
 		}
 		// add the last interval
-		mergedIntervals.add(new Interval(start, end));
+		mergedIntervals.add(new Interval2(start, end));
 
 		return mergedIntervals;
 	}
 	
 	public static void main(String[] args) {
-		List<Interval> input = new ArrayList<Interval>();
-		input.add(new Interval(1, 4));
-		input.add(new Interval(2, 5));
-		input.add(new Interval(7, 9));
+		List<Interval2> input = new ArrayList<Interval2>();
+		input.add(new Interval2(1, 4));
+		input.add(new Interval2(2, 5));
+		input.add(new Interval2(7, 9));
 		System.out.print("Merged intervals: ");
-		for(Interval interval : MergeIntervalsOfficial.merge(input)) {
+		for(Interval2 interval : MergeIntervalsOfficial.merge(input)) {
 			System.out.print("[" + interval.start + ", " + interval.end + "] ");
 		}
 		System.out.println();
 
-		input = new ArrayList<Interval>();
-		input.add(new Interval(6, 7));
-		input.add(new Interval(2, 4));
-		input.add(new Interval(5, 9));
+		input = new ArrayList<Interval2>();
+		input.add(new Interval2(6, 7));
+		input.add(new Interval2(2, 4));
+		input.add(new Interval2(5, 9));
 		System.out.print("Merged intervals: ");
-		for(Interval interval : MergeIntervalsOfficial.merge(input)) {
+		for(Interval2 interval : MergeIntervalsOfficial.merge(input)) {
 			System.out.print("[" + interval.start + ", " + interval.end + "] ");
 		}
 		System.out.println();
 
-		input = new ArrayList<Interval>();
-		input.add(new Interval(1, 4));
-		input.add(new Interval(2, 6));
-		input.add(new Interval(3, 5));
+		input = new ArrayList<Interval2>();
+		input.add(new Interval2(1, 4));
+		input.add(new Interval2(2, 6));
+		input.add(new Interval2(3, 5));
 		System.out.print("Merged intervals: ");
-		for(Interval interval : MergeIntervalsOfficial.merge(input)) {
+		for(Interval2 interval : MergeIntervalsOfficial.merge(input)) {
 			System.out.print("[" + interval.start + ", " + interval.end + "] ");
 		}
 		System.out.println();
 	}
+	*/
 }

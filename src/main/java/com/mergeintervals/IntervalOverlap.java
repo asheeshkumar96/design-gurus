@@ -5,18 +5,10 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Collections;
 
-class Interval {
-	int start;
-	int end;
-	public Interval(int start, int end) {
-		this.start = start;
-		this.end = end;
-	}
-};
 
 // Similar problems
 class IntervalOverlap {
-
+    /*
 	public static boolean overlap(List<Interval> intervals) {
 
 		Collections.sort(intervals, (a, b) -> Integer.compare(a.start, b.start));
@@ -49,4 +41,5 @@ class IntervalOverlap {
 		input.add(new Interval(7, 9));
 		System.out.println(IntervalOverlap.overlap(input));
 	}
+	*/
 }

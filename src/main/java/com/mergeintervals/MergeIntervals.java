@@ -1,26 +1,13 @@
 package com.mergeintervals;
 
-import com.mergeintervals.MergeIntervals;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Collections;
 
-class Interval {
-  int start;
-  int end;
-
-  public Interval(int start, int end) {
-    this.start = start;
-    this.end = end;
-  }
-
-  public String toString() {
-    return "[" + start + ", " + end + "] ";
-  }
-}
 
 public class MergeIntervals {
-
+  
+  /*
   public static List<Interval> merge(List<Interval> intervals) {
     // If passed intervals size is one or less than one , return
     if(intervals.size() <= 1) {
@@ -81,4 +68,5 @@ public class MergeIntervals {
     }
     System.out.println();
   }
+  */
 }
