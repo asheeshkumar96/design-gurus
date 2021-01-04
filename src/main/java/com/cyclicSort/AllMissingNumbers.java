@@ -16,7 +16,7 @@ public class AllMissingNumbers {
       }
     }
 
-    List<Integer> missingNumbers = new ArrayList<>();
+    List<Integer> missingNumbers = new ArrayList<Integer>();
     for (i = 0; i < nums.length; i++) {
       if (nums[i] != i + 1) {
         missingNumbers.add(i + 1);
