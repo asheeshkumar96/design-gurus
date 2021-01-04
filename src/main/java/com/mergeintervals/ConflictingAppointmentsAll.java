@@ -24,7 +24,6 @@ public class ConflictingAppointmentsAll {
 				j++;
 			}
 		}
-		System.out.println("Conflicting appointments:" + conflictingAppointments);
 		return conflictingAppointments;
 	}
 
