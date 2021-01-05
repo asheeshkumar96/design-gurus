@@ -7,7 +7,7 @@ import java.util.Collections;
 
 
 // Similar problems
-class IntervalOverlap {
+class SimilarIntervalOverlap {
     /*
 	public static boolean overlap(List<Interval> intervals) {
 
