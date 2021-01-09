@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+// official
 public class EmployeeFreeTime {
 
 	public static List<Interval> findEmployeeFreeTime(List<List<Interval>> schedule) {
