@@ -1,8 +1,9 @@
 package com.llinplacereversal;
 
-public class ReverseEveryKElementsOfficial {
+// official only
+public class ReverseAlternatingKElementsSublist {
 	
-	public static ListNode reverse(ListNode head, int k) { 
+	private static ListNode reverse(ListNode head, int k) {
 		if(k <= 1 || head == null)
 			return head;
 		
@@ -29,10 +30,14 @@ public class ReverseEveryKElementsOfficial {
 			// connect with the next part
 			lastNodeOfSublist.next = current;
 			
+			// skip 'k' nodes
+			for(int i = 0; current != null && i < k; i++) { // In a for loop, the (post-pre)-(increment/decrement) doesn't reflect any effect on the iterations
+				previous = current; 
+				current = current.next;
+			}
+			
 			if(current == null) // break, if we've reached the end of the LinkedList
 				break;
-			// prepare for the next sub-list
-			previous = lastNodeOfSublist;
 		}
 		return head;
 	}
@@ -47,8 +52,8 @@ public class ReverseEveryKElementsOfficial {
 		head.next.next.next.next.next.next = new ListNode(7);
 		head.next.next.next.next.next.next.next = new ListNode(8);
 		
-		ListNode result = ReverseEveryKElementsOfficial.reverse(head, 3);
-		System.out.println("Nodes of reversed LinkedList are: ");
+		ListNode result = ReverseAlternatingKElementsSublist.reverse(head, 2);
+		System.out.print("Nodes of the reversed LinkedList are: ");
 		while(result != null) {
 			System.out.print(result.value + " ");
 			result = result.next;
