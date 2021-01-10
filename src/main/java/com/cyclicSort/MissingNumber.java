@@ -1,38 +1,40 @@
 package com.cyclicSort;
 
+// official
 public class MissingNumber {
 
-  public static int findMissingNumber(int[] nums) {
-    int i = 0;
-    while ( i < nums.length) {
-      //System.out.println("index = " + i + ", value at index = " + nums[i]);
-      if(nums[i] < nums.length && nums[i] != nums[nums[i]]) {
-        //System.out.println("swapping...");
-        swap(nums, i, nums[i]);
-      } else {
-        //System.out.println("incrementing index");
-        i++;
-      }
-    }
-    
-    // find the first number missing from its index, that will be our required number
-    for(i = 0; i < nums.length; i++) {
-      //System.out.println("current value" + nums[i]);
-      if(nums[i] != i) {
-        return i;
-      }
-    }
-    return nums.length;
-  }
+	public static int findMissingNumber(int[] nums) {
+		int i = 0;
+		while (i < nums.length) {
+			// System.out.println("index = " + i + ", value at index = " + nums[i]);
+			if (nums[i] < nums.length && nums[i] != nums[nums[i]]) {
+				// System.out.println("swapping...");
+				swap(nums, i, nums[i]);
+			} else {
+				// System.out.println("incrementing index");
+				i++;
+			}
+		}
 
-  private static void swap(int[] arr, int i, int j) {
-    int temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
-  }
+		// find the first number missing from its index, that will be our required
+		// number
+		for (i = 0; i < nums.length; i++) {
+			// System.out.println("current value: " + nums[i]);
+			if (nums[i] != i) {
+				return i;
+			}
+		}
+		return nums.length;
+	}
 
-  public static void main(String[] args) {
-    System.out.println(MissingNumber.findMissingNumber(new int[] {4, 0, 3, 1}));
-    System.out.println(MissingNumber.findMissingNumber(new int[] {8, 3, 5, 2, 4, 6, 0, 1}));
-  }
+	private static void swap(int[] arr, int i, int j) {
+		int temp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = temp;
+	}
+
+	public static void main(String[] args) {
+		System.out.println(MissingNumber.findMissingNumber(new int[] { 4, 0, 3, 1 }));
+		System.out.println(MissingNumber.findMissingNumber(new int[] { 8, 3, 5, 2, 4, 6, 0, 1 }));
+	}
 }

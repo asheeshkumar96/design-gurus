@@ -4,3 +4,8 @@ EmployeeFreeTime - Medium/Hard
 
 =================Similar Problems==============
 SimilarMaxIntervalsOverlapPoint
+
+
+==================Cyclic Sort==================
+The whole cyclic sort is very tricky. Devising a solution, sometimes seems very hard. 
+For example, Missing Number
