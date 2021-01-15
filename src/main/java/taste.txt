@@ -8,4 +8,6 @@ SimilarMaxIntervalsOverlapPoint
 
 ==================Cyclic Sort==================
 The whole cyclic sort is very tricky. Devising a solution, sometimes seems very hard. 
-For example, Missing Number
+For example, Missing Number, All Missing Number, First Missing Positive and Firt K Missing Positive 
+
+=================Breadth First Search ==================
