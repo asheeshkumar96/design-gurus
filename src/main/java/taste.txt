@@ -1,7 +1,8 @@
 =================Problems =====================
+
+
+=================Merge Intervals ==============
 EmployeeFreeTime - Medium/Hard
-
-
 =================Similar Problems==============
 SimilarMaxIntervalsOverlapPoint
 
@@ -11,3 +12,7 @@ The whole cyclic sort is very tricky. Devising a solution, sometimes seems very 
 For example, Missing Number, All Missing Number, First Missing Positive and Firt K Missing Positive 
 
 =================Breadth First Search ==================
+
+=================Depth First Search=====================
+CountAllPathSum, TreeDiameter, MaximumPathSum
+
