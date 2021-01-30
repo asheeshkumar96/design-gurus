@@ -2,8 +2,36 @@ package com.depthFirstSearch;
 
 public class MaximumPathSum {
 	
+	static int globalMaximumSum;
+	
 	public static int findMaximumPathSum(TreeNode root) {
-		return -1;
+		globalMaximumSum = Integer.MIN_VALUE;
+		findMaximumPathSumRecursive(root);
+		return globalMaximumSum;
+	}
+	
+	private static int findMaximumPathSumRecursive(TreeNode currentNode) {
+		if(currentNode == null)
+			return 0;
+		
+		int maxPathSumFromLeft = findMaximumPathSumRecursive(currentNode.left);
+		int maxPathSumFromRight = findMaximumPathSumRecursive(currentNode.right);
+		
+		
+		// ignore paths with negative sums, since we need to find the maximum sum we should
+		// ignore any path which has an overall negative sum
+		maxPathSumFromLeft = Math.max(maxPathSumFromLeft, 0);
+		maxPathSumFromRight = Math.max(maxPathSumFromRight, 0);
+		
+		
+		int localMaximumSum = maxPathSumFromLeft + maxPathSumFromRight + currentNode.val;
+		
+		// update the global maximum sum
+		globalMaximumSum = Math.max(localMaximumSum, globalMaximumSum);
+		
+		// maximum sum of any path from the current node will be equal to the maximum of
+		// the sums from left or right subtrees plus the value of the current node
+		return Math.max(maxPathSumFromLeft, maxPathSumFromRight) + currentNode.val;
 	}
 
 	public static void main(String[] args) {
