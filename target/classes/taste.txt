@@ -16,3 +16,18 @@ For example, Missing Number, All Missing Number, First Missing Positive and Firt
 =================Depth First Search=====================
 CountAllPathSum, TreeDiameter, MaximumPathSum
 
+=================Two Heaps =============================
+Sliding Window Median (hard), Maximize Capital (hard), Next Interval etc. 
+
+================== Subsets =============================
+
+
+
+
+
+
+
+
+
+
+
