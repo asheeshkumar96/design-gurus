@@ -20,7 +20,7 @@ CountAllPathSum, TreeDiameter, MaximumPathSum
 Sliding Window Median (hard), Maximize Capital (hard), Next Interval etc. 
 
 ================== Subsets =============================
-
+Subsets(How it is solved using BFS approach)
 
 
 
