@@ -6,6 +6,7 @@ import java.util.List;
 public class Subsets {
 	
 	// official, but how it is breadth first approach ????
+	// the time and space complexity is O(2^n)
 	public static List<List<Integer>> findSubsets(int[] nums) {
 		List<List<Integer>> subsets = new ArrayList<>();
 		// start by adding the empty subset
