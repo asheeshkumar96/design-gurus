@@ -7,7 +7,7 @@ import java.util.Queue;
 
 public class Permutations {
 	
-	// time and space complexity both are O(N * N!), 
+	// time and space complexity both are O(N * N!), but how is it BFS
 	public static List<List<Integer>> findPermutations(int[] nums) {
 		List<List<Integer>> result = new ArrayList<>();
 		Queue<List<Integer>> permutations = new LinkedList<>();
