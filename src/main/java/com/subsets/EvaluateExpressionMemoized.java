@@ -1,12 +1,19 @@
 package com.subsets;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 // official
-public class EvaluateExpression {
+public class EvaluateExpressionMemoized {
+	
+	// memoization map
+	static Map<String, List<Integer>> map = new HashMap<String, List<Integer>>();
 	
 	public static List<Integer> diffWaysToEvaluateExpression(String input) {
+		if(map.containsKey(input))
+			return map.get(input);
 		List<Integer> result = new ArrayList<>();
 		// base case: if the input string is a number, parse and add it to output
 		if(!input.contains("+") && !input.contains("-") && !input.contains("*")) {
@@ -31,14 +38,15 @@ public class EvaluateExpression {
 				}
 			}
 		}
+		map.put(input, result);
 		return result;
 	}
 
 	public static void main(String[] args) {
-		List<Integer> result = EvaluateExpression.diffWaysToEvaluateExpression("1+2*3");
+		List<Integer> result = EvaluateExpressionMemoized.diffWaysToEvaluateExpression("1+2*3");
 		System.out.println("Expression evaluations: " + result);
 		
-		result = EvaluateExpression.diffWaysToEvaluateExpression("2*3-4-5");
+		result = EvaluateExpressionMemoized.diffWaysToEvaluateExpression("2*3-4-5");
 		System.out.println("Expression evaluations: " + result);
 	}
 }
