@@ -3,7 +3,25 @@ package com.modifiedBinarySearch;
 public class CeilingOfANumber {
 	
 	public static int searchCeilingOfANumber(int[] arr, int key) {
-		return -1;
+		int res = -1;
+		int start = 0, end = arr.length - 1;
+		while (start <= end) {
+			int mid = start + (end - start) / 2;
+			if(key == arr[mid]) {
+				res = mid;
+				break;
+			}
+			
+			if(arr[mid] > key) {
+				res = mid;
+				// if possible then find smaller
+				end = mid - 1;
+			} else {
+				// mid is less than key, find greater than or equal to key
+				start = mid + 1;
+			}
+		}
+		return res;
 	}
 
 	public static void main(String[] args) {
