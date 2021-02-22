@@ -16,6 +16,7 @@ class ArrayReader {
 
 public class SearchInfiniteSortedArray {
 
+	// official, very good way to find the bounds
 	public static int search(ArrayReader reader, int key) {
 		// find the proper bounds first
 		int start = 0, end = 1;
