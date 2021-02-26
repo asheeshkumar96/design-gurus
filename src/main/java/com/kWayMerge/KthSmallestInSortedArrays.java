@@ -16,6 +16,7 @@ class Node {
 
 public class KthSmallestInSortedArrays {
 	
+	// official
 	public static int findKthSmallest(List<Integer[]> lists, int k) {
 		PriorityQueue<Node> minHeap = new PriorityQueue<Node>(
 				(n1, n2) -> lists.get(n1.arrayIndex)[n1.elementIndex] - lists.get(n2.arrayIndex)[n2.elementIndex]);
