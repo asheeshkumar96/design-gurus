@@ -13,9 +13,9 @@ class MatrixNode {
 
 public class KthSmallestInSortedMatrix {
 	
-	// also official
+	// also official, but complexity calculation to O(min(K,N) + K * logN), how ? 
 	public static int findKthSmallest(int[][] matrix, int k) {
-		PriorityQueue<MatrixNode> minHeap = new PriorityQueue<MatrixNode>(
+		PriorityQueue<MatrixNode> minHeap = new PriorityQueue<MatrixNode> (
 				(n1, n2) -> matrix[n1.row][n1.col] - matrix[n2.row][n2.col]);
 		
 		for(int i = 0; i < matrix.length; i++)
@@ -31,7 +31,6 @@ public class KthSmallestInSortedMatrix {
 			if(matrix[node.row].length > node.col)
 				minHeap.add(node);
 		}
-		
 		return result;
 	}
 
