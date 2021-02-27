@@ -4,15 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
 
-class Node {
-	int elementIndex;
-	int arrayIndex;
-	
-	public Node(int elementIndex, int arrayIndex) {
-		this.elementIndex = elementIndex;
-		this.arrayIndex = arrayIndex;
-	}
-}
 
 public class KthSmallestInSortedArrays {
 	

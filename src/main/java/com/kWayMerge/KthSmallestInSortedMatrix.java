@@ -2,15 +2,6 @@ package com.kWayMerge;
 
 import java.util.PriorityQueue;
 
-class MatrixNode {
-	int row;
-	int col; 
-	MatrixNode(int row, int col) { 
-		this.row = row;
-		this.col = col;
-	}
-}
-
 public class KthSmallestInSortedMatrix {
 	
 	// also official, but complexity calculation to O(min(K,N) + K * logN), how ? 
