@@ -1,8 +1,9 @@
-=================Problems =====================
+********************Problems **********************
 
 
 =================Merge Intervals ==============
 EmployeeFreeTime - Medium/Hard
+
 =================Similar Problems==============
 SimilarMaxIntervalsOverlapPoint
 
@@ -22,6 +23,14 @@ Sliding Window Median (hard), Maximize Capital (hard), Next Interval etc.
 ================== Subsets =============================
 Subsets(How it is solved using BFS approach)
 Balanced Parentheses, time and space complexity calculation
+
+================== Binary Search =======================
+SerchRotatedArray, SearchRotatedArrayWithDuplicates, RotationCount, RotationCountWithDuplicate
+
+================== k-way merge =========================
+SmallestRange, KthSmallestInSortedMatrixBinarySearch
+
+================== top-k elements ======================
 
 
 
