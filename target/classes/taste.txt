@@ -33,7 +33,7 @@ SmallestRange, KthSmallestInSortedMatrixBinarySearch
 ================== top-k elements ======================
 
 ================== Knapsack ============================
-Knapsack(very hard, I did all just official), Everything official
+Knapsack(very hard, I did all just official), Everything official, bottom up space optimization out of understanding.
 
 
 
