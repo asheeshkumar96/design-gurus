@@ -1,6 +1,5 @@
 package com.knapsack;
 
-import java.util.Arrays;
 
 public class KnapsackBottomup {
 
