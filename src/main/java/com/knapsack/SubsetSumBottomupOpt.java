@@ -1,6 +1,6 @@
 package com.knapsack;
 
-public class SubsetSumOpt {
+public class SubsetSumBottomupOpt {
 	
 	public boolean canPartition(int[] nums, int sum) {
 		int n = nums.length;
@@ -31,7 +31,7 @@ public class SubsetSumOpt {
 	}
 
 	public static void main(String[] args) {
-		SubsetSumOpt ss = new SubsetSumOpt();
+		SubsetSumBottomupOpt ss = new SubsetSumBottomupOpt();
 		int[] nums = {1, 2, 3, 7};
 		System.out.println(ss.canPartition(nums, 6));
 		nums =  new int[] {1, 2, 7, 1, 5};
