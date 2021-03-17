@@ -32,7 +32,7 @@ SmallestRange, KthSmallestInSortedMatrixBinarySearch
 
 ================== top-k elements ======================
 ConnectRopes, KClosestElements, MaximumDistinctElements(the optimization of pushing only k elements is out of understanding),
-SumOfElementsOfficial alternate solution,
+SumOfElementsOfficial alternate solution, RearrangeString, 
 ================== Knapsack ============================
 Knapsack(very hard, I did all just official), Everything official, bottom up space optimization out of understanding.
 
