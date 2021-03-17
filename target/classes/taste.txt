@@ -31,7 +31,7 @@ SerchRotatedArray, SearchRotatedArrayWithDuplicates, RotationCount, RotationCoun
 SmallestRange, KthSmallestInSortedMatrixBinarySearch
 
 ================== top-k elements ======================
-ConnectRopes, KClosestElements, 
+ConnectRopes, KClosestElements, MaximumDistinctElements(the optimization of pushing only k elements is out of understanding)
 ================== Knapsack ============================
 Knapsack(very hard, I did all just official), Everything official, bottom up space optimization out of understanding.
 
