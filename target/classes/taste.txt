@@ -37,7 +37,7 @@ SumOfElementsOfficial alternate solution, RearrangeString, FrequencyStack, Rearr
 Knapsack(very hard, I did all just official), Everything official, bottom up space optimization out of understanding.
 
 ================== Topological sort ====================
-AllTaskSchedulingOrders(very hard), 
+AllTaskSchedulingOrders(very hard), Time complexigy of AlienDictionary, overall topological sort and all task scheduling orders
 
 ================== Misc ================================
 QuickSelect, MedianOfMedians
