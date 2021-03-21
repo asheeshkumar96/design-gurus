@@ -9,6 +9,7 @@ import java.util.Queue;
 
 public class SequenceReconstruction {
 
+	// official, the official solution is very good, compared to my thought
 	public static boolean canConstruct(int[] originalSeq, int[][] sequences) {
 		List<Integer> sortedOrder = new ArrayList<>();
 		if(originalSeq.length <= 0)
