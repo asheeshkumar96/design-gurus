@@ -38,6 +38,7 @@ Knapsack(very hard, I did all just official), Everything official, bottom up spa
 
 ================== Topological sort ====================
 AllTaskSchedulingOrders(very hard), Time complexigy of AlienDictionary, overall topological sort and all task scheduling orders
+MinimumHeightTrees(very hard, even official's intuition is out of understanding)
 
 ================== Misc ================================
 QuickSelect, MedianOfMedians
