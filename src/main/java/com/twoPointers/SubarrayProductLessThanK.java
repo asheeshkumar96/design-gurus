@@ -5,7 +5,10 @@ import java.util.List;
 
 public class SubarrayProductLessThanK {
 	
-	// elegent solution, overall time complexity is O(n^3), official, worst case space complexity O(n^2)
+	// the main for loop managing the sliding window takes O(n) but creating subarrays can take up to O(n^2)
+	// in the worse case. Therefore, overall algorithm will take O(n^3).
+	// Ignoring the space required for output list, the algorithm runs in O(n) , which is used for the temp list.
+	// the space required for output list worst case is O(n^2)
 	public static List<List<Integer>> findSubarrays(int[] arr, int target) {
 		List<List<Integer>> result = new ArrayList<>();
 		int product = 1, left = 0; 
