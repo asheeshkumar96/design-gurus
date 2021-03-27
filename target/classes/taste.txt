@@ -1,5 +1,8 @@
 ********************Problems **********************
 
+================ Sliding Window ===============
+CharacterReplacement, 
+
 ================Two pointers ==================
 SubarrayProductLessThanK, QuadrupleSumToTarget, BackspaceCompare
 
