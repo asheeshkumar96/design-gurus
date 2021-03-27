@@ -27,7 +27,7 @@ public class StringPermutation {
 				return true;
 			
 			if(windowEnd >= pattern.length() - 1) { // shrink the window by one character
-				char leftChar = str.charAt(windowStart);
+				char leftChar = str.charAt(windowStart++);
 				if(charFrequencyMap.containsKey(leftChar)) {
 					if(charFrequencyMap.get(leftChar) == 0)
 						matched--; // before putting the character back, decrement the matched count
