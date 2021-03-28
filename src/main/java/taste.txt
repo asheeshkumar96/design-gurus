@@ -1,7 +1,7 @@
 ********************Problems **********************
 
 ================ Sliding Window ===============
-CharacterReplacement, 
+CharacterReplacement, MinimumWindowSubstring, WordConcatenation  
 
 ================Two pointers ==================
 SubarrayProductLessThanK, QuadrupleSumToTarget, BackspaceCompare
